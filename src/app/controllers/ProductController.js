@@ -1,5 +1,5 @@
 import { Op } from 'sequelize';
-import { endOfDay, startOfDay, isAfter, isBefore, parseISO } from 'date-fns'
+import { endOfDay, isBefore } from 'date-fns'
 import Product from '../models/Product';
 
 class ProductController {
