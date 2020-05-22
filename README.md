@@ -98,3 +98,4 @@ Made with 💙 by Victor Eyer :wave: [Get in touch!](https://www.linkedin.com/in
 
 [nodejs]: https://nodejs.org/
 [vc]: https://code.visualstudio.com/
+[yarn]: https://classic.yarnpkg.com/lang/en/
