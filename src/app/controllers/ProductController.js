@@ -12,13 +12,13 @@ class ProductController {
     });
 
     const stock = [];
-    const todayStart = startOfDay(new Date());
-    const todayEnds = endOfDay(new Date());
+    const today = (new Date());
+      
     products.map(product => { 
       let newValue =  
         (product.promocao !== 0) && 
         (product.validade !== null) && 
-        (isBefore(todayStart, startOfDay(new Date(product.validade)))) && 
+        (isBefore(today, endOfDay(new Date(product.validade)))) && 
         (product.promocao < product.preco) ? product.promocao : product.preco;
 
       stock.push({ 
