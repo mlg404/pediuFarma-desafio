@@ -8,23 +8,20 @@ class Product extends Model {
           type: Sequelize.INTEGER,
           primaryKey: true,
         },
-        preco: Sequelize.INTEGER,
+        preco: Sequelize.FLOAT,
         quantidade: Sequelize.INTEGER,
         barra: Sequelize.STRING,
-        promocao: Sequelize.DATE,
-        inipromo: Sequelize.DATE,
-        fimpromo: Sequelize.DATE,
+        promocao: Sequelize.FLOAT,
+        validade: Sequelize.DATE,
       },
       {
         sequelize,
         modelName: 'estoque',
         tableName: 'estoque',
       }
-    );
-
+    );     
     return this;
   }
-
 }
 
 export default Product;
