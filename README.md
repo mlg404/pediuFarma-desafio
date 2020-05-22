@@ -43,7 +43,9 @@
 ## :rocket: Info
 
 Na primeira etapa, o desafio consistia em fazer engenharia reversa no banco de dados deles e retirar informações para as próximas etapas!
-Na segunda etapa, tivemos que montar um JSON com o preço, código de barras e quantidade dos produtos em estoque, porém tinha uma regra: se o produto tivesse um preço promocional, o mesmo deveria ser exibido com este preço promocional, caso tivesse dentro da validade da promoção
+Na segunda etapa, tivemos que montar um JSON com o preço, código de barras e quantidade dos produtos em estoque, porém tinha uma regra: se o produto tivesse um preço promocional, o mesmo deveria ser exibido com este preço promocional, caso tivesse dentro da validade da promoção.
+
+[Gravei um vídeo fazendo a instalação e alguns comentários por cima, basta clicar aqui!](https://www.youtube.com/watch?v=c-WqA4IOsNE)
 
 ## :computer: Tecnologias
 
@@ -79,6 +81,8 @@ $ yarn install
 $ yarn dev
 ```
 **Importante**: Você precisará ter um servidor mysql rodando em sua máquina. Eu escolhi criar um container no Docker e subir o mysql. Lembre-se de configurar as informações no arquivo `~/config/database.js`
+
+**Vendo o resultado**: o resultado pode ser visto acessando `http://localhost:3333/` ou algum aplicativo que faça requisições http (gosto de utilizar o Insomnia)
 
 ## :busts_in_silhouette: Contribua
 
